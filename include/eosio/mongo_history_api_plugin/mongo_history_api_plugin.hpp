@@ -5,6 +5,7 @@
 
 #pragma once
 #include <eosio/mongo_history_plugin/mongo_history_plugin.hpp>
+#include <eosio/mongo_db_plugin/mongo_db_plugin.hpp>
 #include <eosio/chain_plugin/chain_plugin.hpp>
 #include <eosio/http_plugin/http_plugin.hpp>
 
