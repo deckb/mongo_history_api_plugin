@@ -31,7 +31,7 @@ void mongo_history_api_plugin::plugin_initialize(const variables_map&) {}
           } \
        }}
 
-#define CHAIN_RO_CALL(call_name) CALL(history, ro_api, history_apis::read_only, call_name)
+#define CHAIN_RO_CALL(call_name) CALL(history, ro_api, mongo_history_apis::read_only, call_name)
 //#define CHAIN_RW_CALL(call_name) CALL(history, rw_api, history_apis::read_write, call_name)
 
 void mongo_history_api_plugin::plugin_startup() {

@@ -16,7 +16,7 @@ namespace eosio {
 
    class history_api_plugin : public plugin<history_api_plugin> {
       public:
-        APPBASE_PLUGIN_REQUIRES((history_plugin)(chain_plugin)(http_plugin))
+        APPBASE_PLUGIN_REQUIRES((mongo_history_plugin)(chain_plugin)(http_plugin))
 
         history_api_plugin();
         virtual ~history_api_plugin();
