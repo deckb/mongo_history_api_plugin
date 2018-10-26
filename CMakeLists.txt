@@ -9,5 +9,5 @@ if(BUILD_MONGO_DB_PLUGIN)
     target_include_directories( mongo_history_api_plugin PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include" )
 
 else()
-  message("mongo_history_plugin not selected and will be omitted.")
+  message("mongo_history_api_plugin not selected and will be omitted.")
 endif()
