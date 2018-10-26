@@ -5,7 +5,6 @@
 
 #pragma once
 #include <eosio/mongo_history_plugin/mongo_history_plugin.hpp>
-#include <eosio/mongo_db_plugin/mongo_db_plugin.hpp>
 #include <eosio/chain_plugin/chain_plugin.hpp>
 #include <eosio/http_plugin/http_plugin.hpp>
 
@@ -17,7 +16,7 @@ namespace eosio {
 
    class mongo_history_api_plugin : public plugin<mongo_history_api_plugin> {
       public:
-        APPBASE_PLUGIN_REQUIRES((mongo_history_plugin)(mongo_db_plugin)(chain_plugin)(http_plugin))
+        APPBASE_PLUGIN_REQUIRES((mongo_history_plugin)(chain_plugin)(http_plugin))
 
         mongo_history_api_plugin();
         virtual ~mongo_history_api_plugin();
